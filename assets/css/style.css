@@ -1,0 +1,441 @@
+
+/*BODY AND BASE STYLES*/
+
+body {
+  width: 100%;
+  background-color: #F0F0F0;
+  margin: 0 auto;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  background-image: url("../images/gplaypattern.png");
+}
+
+#container {
+  width: 960px;
+  padding-bottom: 20px;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+p {
+  margin: 15px;
+  line-height: 26px;
+  color: black;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+/*=====================*/
+
+/*HEADER STYLES*/
+
+header {
+  margin-bottom: 30px;
+  background: white;
+  border-bottom: 3px solid lightgray;
+}
+
+h1, h3 {
+  display: inline-block;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h6 {
+  font-weight: normal;
+}
+
+header h1 {
+  background: #932AFC;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-left: 158px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/*=====================*/
+
+/*NAV STYLES*/
+
+nav header {
+  width: 40%;
+  float: right;
+  display: inline;
+}
+
+nav li {
+  list-style: none;
+  float: left;
+  margin-left: 15px;
+  padding-right: 9px;
+  border-right: 1px solid gray;
+  color: gray;
+  text-decoration: none;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav ul {
+  display: inline-block;
+  margin: 0;
+}
+
+nav {
+  display: inline;
+  margin-left: 520px;
+}
+
+/*=====================*/
+
+/*SIDEBAR STYLES*/
+
+aside ul {
+  list-style: none;
+  width: 80%;
+  -webkit-padding-start: 32px;
+}
+
+aside li {
+  float: left;
+  margin-right: 2px;
+  background-color: #932AFC;
+  -moz-border-radius: 6px;
+  border-radius: 10px;
+}
+
+aside h3 {
+  color: #932AFC;
+  padding-bottom: 20px;
+  border-bottom: 2px solid lightgray;
+}
+
+#connect {
+  float: left;
+  width: 22%;
+  padding: 2%;
+  margin-left: 40px;
+  text-align: center;
+  background: white;
+  padding-bottom: 40px;
+  border: 1px dotted lime;
+}
+
+.rotate:hover  {
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+/*=====================*/
+
+/*ABOUT ME*/
+
+#about-me {
+  float: left;
+  background-color: white;
+  width: 65%;
+  margin-left: 0;
+  overflow: auto;
+  padding: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border: 1px dotted lime;
+}
+
+#about-me h1 {
+  margin: 15px;
+  margin-top: auto;
+  border-bottom: 3px solid lightgray;
+  line-height: 80px;
+  color: #932AFC;
+  width: -webkit-fill-available;
+}
+
+#about-me img {
+  margin: 15px;
+  float: left;
+  border: 2px solid lime;
+}
+
+/*=====================*/
+
+/*FORM STYLES*/
+
+input[type=text], select, textarea {
+  width: 590px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #932AFC;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #60e5da;
+}
+
+.form-container button {
+  margin: 16px;
+  margin-bottom: 10px;
+  padding: 12px 30px 12px 30px;
+  background: #932AFC;
+  color: white;
+  font-size: 17px;
+  border: none;
+}
+
+.form-container p {
+  margin: 0px;
+  margin-left: 16px;
+
+}
+
+#msg-height {
+  height: 200px;
+}
+
+#contact-box {
+  float: left;
+  background-color: white;
+  width: 65%;
+  margin-left: 0;
+  overflow: auto;
+  padding: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border: 1px dotted lime;
+}
+
+#contact-box h1 {
+  margin: 15px;
+  margin-top: auto;
+  border-bottom: 3px solid lightgray;
+  line-height: 80px;
+  width: -webkit-fill-available;
+  color: #932AFC;
+}
+
+/*=====================*/
+
+/*PORTFOLIO STYLES*/
+
+.portfolio-box {
+  float: left;
+  background-color: white;
+  width: 65%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border: 1px dotted lime;
+}
+
+/*.portfolio-box h1 {
+  margin: 15px;
+  margin-top: auto;
+  border-bottom: 3px solid lightgray;
+  line-height: 80px;
+  color: #932AFC;
+  width: -webkit-fill-available;
+  text-align: left;
+  height: 70px;
+  font-size: xx-large;
+}*/
+
+.projects-box {
+  float: none;
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-box h1 {
+  margin: 15px;
+  margin-top: auto;
+  border-bottom: 3px solid lightgray;
+  line-height: 80px;
+  color: #932AFC;
+  width: -webkit-fill-available;
+  text-align: left;
+  font-size: x-large;
+}
+
+.img-wrapper {
+  width: 240px;
+  float: left;
+  margin-right: 15px;
+  margin-left: 23px;
+  margin-bottom: 15px;
+}
+
+.img-wrapper img {
+  width: 100%
+}
+
+.text-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: -70px;
+  background-color: #932AFC;
+}
+
+.text-wrapper h3 {
+  color: white;
+}
+
+
+/*=====================*/
+
+/*FOOTER STYLES*/
+
+footer {
+  clear: both;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  text-align: center;
+  color: lime;
+  background-color: grey;
+  border-top: 6px solid #932AFC;
+}
+
+/*=====================*/
+
+/*TRICKS*/
+
+a:link {color: blue;}
+a:visited {color: lime;}
+a:hover {background-color: #932AFC;}
+a:active {color: yellow;}
+
+
+/*===========MEDIA QUERIES=============*/
+
+@media screen and (max-width : 980px) {
+
+  header {
+    height: 5.1em;
+  }
+
+  header h1 {
+    margin-left: 140px;
+    display: inline;
+    padding: 24px;
+    position: absolute;
+  }
+
+  nav {
+    margin-left: 462px;
+  }
+
+  nav ul {
+    padding-top: 1.5em;
+    padding-left: 9em;
+  }
+
+  aside ul {
+    padding-left: 20px;
+  }
+
+
+  #about-me {
+    width: 40%;
+    margin-left: 131px;
+  }
+
+  #about-me img {
+    width: 90%;
+  }
+
+  .portfolio-box {
+    width: 40%;
+    margin-left: 131px;
+  }
+
+  .projects-box {
+    width: 100%;
+  }
+
+  .img-wrapper {
+    width: 88%;
+    margin-bottom: 2em;
+  }
+
+  #contact-box {
+    width: 40%;
+    margin-left: 131px;
+  }
+
+  input[type=text], select, textarea {
+    width: 350px;
+  }
+
+  #connect {
+    width: 20%;
+  }
+
+  aside ul {
+    padding-left: 20px;
+  }
+
+}
+
+
+
+@media screen and (max-width : 768px)  {
+
+  nav {
+    margin-left: 368px;
+  }
+
+  header h1 {
+    margin-left: 29px;
+  }
+
+  #about-me {
+    width: 70%;
+    margin-left: 29px;
+  }
+
+  #about-me img {
+    width: 50%;
+  }
+
+  #connect {
+    width: 69%;
+    margin-left: 29px;
+    text-align: left;
+  }
+
+  aside h3 {
+    padding-right: 75%;
+  }
+
+}
+
+@media screen and (max-width : 640px) {
+
+
+}
