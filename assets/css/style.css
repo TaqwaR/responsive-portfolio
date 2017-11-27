@@ -314,6 +314,7 @@ footer {
   clear: both;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-top: 38px;
   position: relative;
   text-align: center;
   color: lime;
@@ -423,6 +424,24 @@ a:active {color: yellow;}
     width: 50%;
   }
 
+  .portfolio-box {
+    width: 70%;
+    margin-left: 29px;
+  }
+
+  .img-wrapper {
+    width: 44%;
+  }
+
+  #contact-box {
+    width: 70%;
+    margin-left: 29px;
+  }
+
+  input[type=text], select, textarea {
+    width: 95%;
+  }
+
   #connect {
     width: 69%;
     margin-left: 29px;
@@ -431,6 +450,10 @@ a:active {color: yellow;}
 
   aside h3 {
     padding-right: 75%;
+  }
+
+  aside ul {
+    padding-left: 2px;
   }
 
 }
