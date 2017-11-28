@@ -460,5 +460,32 @@ a:active {color: yellow;}
 
 @media screen and (max-width : 640px) {
 
+  nav {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  nav ul {
+    margin-top: 4em;
+  }
+
+  #about-me {
+    width: 58%;
+  }
+
+  #about-me img {
+    width: 94%;
+  }
+
+  header h1 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  #connect {
+    width: 57%;
+  }
+
 
 }
