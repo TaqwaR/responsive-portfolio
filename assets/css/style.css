@@ -4,7 +4,10 @@
 body {
   width: 100%;
   background-color: #F0F0F0;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   background-image: url("../images/gplaypattern.png");
 }
@@ -105,9 +108,9 @@ aside ul {
 aside li {
   float: left;
   margin-right: 2px;
-  background-color: #932AFC;
+  background-color: lime;
   -moz-border-radius: 6px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 aside h3 {
@@ -328,7 +331,7 @@ footer {
 
 a:link {color: blue;}
 a:visited {color: lime;}
-a:hover {background-color: #932AFC;}
+a:hover {background-color: lime;}
 a:active {color: yellow;}
 
 
@@ -353,7 +356,7 @@ a:active {color: yellow;}
 
   nav ul {
     padding-top: 1.5em;
-    padding-left: 9em;
+    padding-left: 10em;
   }
 
   aside ul {
@@ -401,23 +404,31 @@ a:active {color: yellow;}
     padding-left: 20px;
   }
 
+  footer {
+    margin-top: 1px;
+  }
+
 }
 
 
 
 @media screen and (max-width : 768px)  {
 
+  #container {
+    width: 768px;
+  }
+
   nav {
     margin-left: 368px;
   }
 
   header h1 {
-    margin-left: 29px;
+    margin-left: 17px;
   }
 
   #about-me {
-    width: 70%;
-    margin-left: 29px;
+    width: 91%;
+    margin-left: 17px;
   }
 
   #about-me img {
@@ -425,8 +436,9 @@ a:active {color: yellow;}
   }
 
   .portfolio-box {
-    width: 70%;
-    margin-left: 29px;
+    width: 91%;
+    /*margin-left: 29px;*/
+    margin-left: 17px;
   }
 
   .img-wrapper {
@@ -434,8 +446,8 @@ a:active {color: yellow;}
   }
 
   #contact-box {
-    width: 70%;
-    margin-left: 29px;
+    width: 91%;
+    margin-left: 17px;
   }
 
   input[type=text], select, textarea {
@@ -443,13 +455,14 @@ a:active {color: yellow;}
   }
 
   #connect {
-    width: 69%;
-    margin-left: 29px;
+    width: 89%;
+    margin-left: 17px;
     text-align: left;
+    padding-left: 2em;
   }
 
   aside h3 {
-    padding-right: 70%;
+    padding-right: 69%;
     margin-bottom: 0em;
   }
 
@@ -460,6 +473,10 @@ a:active {color: yellow;}
 }
 
 @media screen and (max-width : 640px) {
+
+  #container {
+    width: 640px;
+  }
 
   header {
     margin-bottom: 5em;
@@ -486,22 +503,54 @@ a:active {color: yellow;}
   }
 
   #about-me {
-    width: 58%;
+    /*width: 58%;*/
+    width: 92%;
+    margin-left: .6em;
+    margin-right: .5em;
   }
 
   #about-me img {
     width: 94%;
   }
 
+  .portfolio-box {
+    width: 91%;
+    margin-left: .6em;
+    margin-right: .5em;
+  }
+
+  .img-wrapper {
+    width: 92%;
+  }
+
   header h1 {
     width: 100%;
     margin: 0;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #connect {
-    width: 57%;
+    /*width: 57%;*/
+    width: 89%;
+    margin-left: .6em;
+    margin-right: .5em;
+    padding-left: 2em;
   }
 
+  #contact-box {
+    width: 91%;
+    margin-left: .6em;
+    margin-right: .5em;
+  }
 
 }
+
+/*use below for debugging*/
+
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
