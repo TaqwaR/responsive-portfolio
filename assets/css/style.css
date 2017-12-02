@@ -16,7 +16,8 @@ body {
   width: 960px;
   padding-bottom: 20px;
   overflow: auto;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin-left: 10em;
 }
 
 p {
@@ -35,9 +36,12 @@ a {
 /*HEADER STYLES*/
 
 header {
+  position: fixed;
+  width: 100%;
   margin-bottom: 30px;
   background: white;
   border-bottom: 3px solid lightgray;
+  z-index: 1;
 }
 
 h1, h3 {
@@ -91,8 +95,11 @@ nav ul {
 }
 
 nav {
-  display: inline;
-  margin-left: 520px;
+  display: block;
+  float: right;
+  margin-top: 2em;
+  margin-right: 9.5em;
+  /*margin-left: 520px;*/
 }
 
 /*=====================*/
@@ -117,16 +124,17 @@ aside h3 {
   color: #932AFC;
   padding-bottom: 20px;
   border-bottom: 2px solid lightgray;
+  margin: 0;
 }
 
 #connect {
   float: left;
   width: 22%;
-  padding: 2%;
+  padding: 25px;
   margin-left: 40px;
   text-align: center;
   background: white;
-  padding-bottom: 40px;
+  margin-top: 7em;
   border: 1px dotted lime;
 }
 
@@ -145,11 +153,13 @@ aside h3 {
 #about-me {
   float: left;
   background-color: white;
-  width: 65%;
+  width: 100%;
+  max-width: 624px;
   margin-left: 0;
   overflow: auto;
   padding: 15px;
   padding-bottom: 25px;
+  margin-top: 7em;
   margin-bottom: 25px;
   border: 1px dotted lime;
 }
@@ -222,6 +232,7 @@ input[type=submit]:hover {
   background-color: white;
   width: 65%;
   margin-left: 0;
+  margin-top: 7em;
   overflow: auto;
   padding: 15px;
   padding-bottom: 25px;
@@ -247,6 +258,7 @@ input[type=submit]:hover {
   background-color: white;
   width: 65%;
   margin: 0 auto;
+  margin-top: 7em;
   overflow: auto;
   padding: 15px;
   padding-bottom: 25px;
@@ -331,13 +343,22 @@ footer {
 
 a:link {color: blue;}
 a:visited {color: lime;}
-a:hover {background-color: lime;}
+a:hover {background-color: #932AFC;}
 a:active {color: yellow;}
 
 
 /*===========MEDIA QUERIES=============*/
 
-@media screen and (max-width : 980px) {
+@media screen and (max-width:980px) {
+
+  nav {
+    margin-right: 8em;
+  }
+
+  #container {
+    width: 100%;
+    margin-left: 0.5em;
+  }
 
   header {
     height: 5.1em;
@@ -350,14 +371,6 @@ a:active {color: yellow;}
     position: absolute;
   }
 
-  nav {
-    margin-left: 462px;
-  }
-
-  nav ul {
-    padding-top: 1.5em;
-    padding-left: 10em;
-  }
 
   aside ul {
     padding-left: 20px;
@@ -388,12 +401,13 @@ a:active {color: yellow;}
   }
 
   #contact-box {
-    width: 40%;
+    width: 100%;
+    max-width: 390px;
     margin-left: 131px;
   }
 
   input[type=text], select, textarea {
-    width: 350px;
+    width: 32em;
   }
 
   #connect {
@@ -411,24 +425,34 @@ a:active {color: yellow;}
 }
 
 
+@media screen and (max-width:937px) and (min-width:769px) {
 
-@media screen and (max-width : 768px)  {
+  aside li {
+    width: -webkit-fill-available;
+    margin-bottom: 1em;
+  }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+  nav {
+    margin-right: 2em;
+  }
 
   #container {
     width: 768px;
   }
 
-  nav {
-    margin-left: 368px;
-  }
-
   header h1 {
-    margin-left: 17px;
+    margin-left: 1.2em;
   }
 
   #about-me {
-    width: 91%;
-    margin-left: 17px;
+    width: 100%;
+    max-width: 647px;
+    margin-left: 2em;
   }
 
   #about-me img {
@@ -436,9 +460,9 @@ a:active {color: yellow;}
   }
 
   .portfolio-box {
-    width: 91%;
+    width: 85%;
     /*margin-left: 29px;*/
-    margin-left: 17px;
+    margin-left: 2em;
   }
 
   .img-wrapper {
@@ -446,8 +470,9 @@ a:active {color: yellow;}
   }
 
   #contact-box {
-    width: 91%;
-    margin-left: 17px;
+    width: 100%;
+    max-width: 650px;
+    margin-left: 2em;
   }
 
   input[type=text], select, textarea {
@@ -455,8 +480,9 @@ a:active {color: yellow;}
   }
 
   #connect {
-    width: 89%;
-    margin-left: 17px;
+    width: 81%;
+    margin-left: 2em;
+    margin-top: 1em;
     text-align: left;
     padding-left: 2em;
   }
@@ -472,7 +498,7 @@ a:active {color: yellow;}
 
 }
 
-@media screen and (max-width : 640px) {
+@media screen and (max-width:640px) {
 
   #container {
     width: 640px;
@@ -480,33 +506,39 @@ a:active {color: yellow;}
 
   header {
     margin-bottom: 5em;
+    position: static;
   }
 
   nav {
     margin-left: 0px;
+    margin-top: 8px;
+    margin-right: 0;
     width: 100%;
+    float: right;
     background-color: white;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     border-bottom: 2px solid lightgrey;
   }
 
   nav ul {
     margin-top: 5em;
+    margin-left: 6em;
     padding-left: 0;
   }
 
   nav li {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
     margin-left: 0;
   }
 
   #about-me {
     /*width: 58%;*/
-    width: 92%;
+    width: 89%;
     margin-left: .6em;
     margin-right: .5em;
+    margin-top: 0;
   }
 
   #about-me img {
@@ -514,9 +546,10 @@ a:active {color: yellow;}
   }
 
   .portfolio-box {
-    width: 91%;
+    width: 87%;
     margin-left: .6em;
     margin-right: .5em;
+    margin-top: 0;
   }
 
   .img-wrapper {
@@ -533,17 +566,47 @@ a:active {color: yellow;}
 
   #connect {
     /*width: 57%;*/
-    width: 89%;
+    width: 83%;
     margin-left: .6em;
     margin-right: .5em;
     padding-left: 2em;
   }
 
   #contact-box {
-    width: 91%;
+    width: 87%;
     margin-left: .6em;
     margin-right: .5em;
+    margin-top: 0;
   }
+
+}
+
+@media screen and (max-width: 540px) {
+  nav ul {
+    margin-left: 3em;
+  }
+
+  #about-me {
+    width: 73%;
+  }
+
+  .portfolio-box {
+    width: 73%;
+  }
+
+  #contact-box {
+    width: 73%;
+  }
+
+  #connect {
+    width: 69%;
+  }
+
+  aside h3 {
+    padding-right: 63%;
+  }
+
+
 
 }
 
